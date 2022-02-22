@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var catalogRoute = require('./routes/catalog');
+var catalogRouter = require('./routes/catalog');
 
 var app = express();
 
@@ -45,8 +45,8 @@ module.exports = app;
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = process.DATABASE || '-'; // add a or expression to handle potential error
-
+var mongoDB = process.env.DATABASE || '-'; // add a or expression to handle potential error
+console.log(mongoDB);
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
