@@ -4,7 +4,6 @@ console.log('This script populates some test books, authors, genres and bookinst
 
 // Get arguments passed on command line
 var userArgs = process.argv.slice(2);
-var callback = () => console.log("The code has/is passing here!!!")
 
 /*
 if (!userArgs[0].startsWith('mongodb')) {
