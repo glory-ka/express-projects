@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Author	.\controllers\authorController.js	/^var Author = require('..\/models\/author');$/;"	v
+Author	.\controllers\bookController.js	/^var Author = require('..\/models\/author');$/;"	v
+Book	.\controllers\authorController.js	/^var Book = require('..\/models\/book');$/;"	v
+Book	.\controllers\bookController.js	/^var Book = require('..\/models\/book');$/;"	v
+Book	.\controllers\bookinstanceController.js	/^var Book = require('..\/models\/book');$/;"	v
+Book	.\controllers\genreController.js	/^var Book = require('..\/models\/book');$/;"	v
+BookInstance	.\controllers\bookController.js	/^var BookInstance = require('..\/models\/bookinstance');$/;"	v
+BookInstance	.\controllers\bookinstanceController.js	/^var BookInstance = require('..\/models\/bookinstance');$/;"	v
+Genre	.\controllers\bookController.js	/^var Genre = require('..\/models\/genre');$/;"	v
+Genre	.\controllers\genreController.js	/^var Genre = require('..\/models\/genre');$/;"	v
+Schema	.\models\author.js	/^var Schema = mongoose.Schema;$/;"	v
+Schema	.\models\book.js	/^var Schema = mongoose.Schema;$/;"	v
+Schema	.\models\bookinstance.js	/^var Schema = mongoose.Schema;$/;"	v
+app	.\app.js	/^var app = express();$/;"	v
+async	.\controllers\authorController.js	/^var async = require('async');$/;"	v
+async	.\controllers\bookController.js	/^var async = require('async');$/;"	v
+async	.\controllers\genreController.js	/^var async = require('async');$/;"	v
+async	.\populatedb.js	/^var async = require('async')$/;"	v
+author_controller	.\controllers\catalog.js	/^var author_controller = require('..\/controllers\/authorController');$/;"	v
+author_controller	.\routes\catalog.js	/^var author_controller = require('..\/controllers\/authorController');$/;"	v
+authordetail.family_name	.\populatedb.js	/^  authordetail = {first_name:first_name , family_name: family_name }$/;"	p
+authordetail.first_name	.\populatedb.js	/^  authordetail = {first_name:first_name , family_name: family_name }$/;"	p
+bookCreate	.\populatedb.js	/^function bookCreate(title, summary, isbn, author, genre, cb) {$/;"	f
+bookInstanceCreate	.\populatedb.js	/^function bookInstanceCreate(book, imprint, due_back, status, cb) {$/;"	f
+book_controller	.\controllers\catalog.js	/^var book_controller = require('..\/controllers\/bookController');$/;"	v
+book_controller	.\routes\catalog.js	/^var book_controller = require('..\/controllers\/bookController');$/;"	v
+book_instance_controller	.\controllers\catalog.js	/^var book_instance_controller = require('..\/controllers\/bookinstanceController');$/;"	v
+book_instance_controller	.\routes\catalog.js	/^var book_instance_controller = require('..\/controllers\/bookinstanceController');$/;"	v
+bookdetail.author	.\populatedb.js	/^    author: author,$/;"	p
+bookdetail.isbn	.\populatedb.js	/^    isbn: isbn$/;"	p
+bookdetail.summary	.\populatedb.js	/^    summary: summary,$/;"	p
+bookdetail.title	.\populatedb.js	/^    title: title,$/;"	p
+bookinstancedetail.book	.\populatedb.js	/^    book: book,$/;"	p
+bookinstancedetail.imprint	.\populatedb.js	/^    imprint: imprint$/;"	p
+catalogRouter	.\app.js	/^var catalogRouter = require('.\/routes\/catalog');$/;"	v
+cookieParser	.\app.js	/^var cookieParser = require('cookie-parser');$/;"	v
+createBookInstances	.\populatedb.js	/^function createBookInstances(cb) {$/;"	f
+createBooks	.\populatedb.js	/^function createBooks(cb) {$/;"	f
+createError	.\app.js	/^var createError = require('http-errors');$/;"	v
+createGenreAuthors	.\populatedb.js	/^function createGenreAuthors(cb) {$/;"	f
+db	.\app.js	/^var db = mongoose.connection;$/;"	v
+db	.\populatedb.js	/^var db = mongoose.connection;$/;"	v
+exports.author_create_get	.\controllers\authorController.js	/^exports.author_create_get = function(req, res, next) {$/;"	f
+exports.author_delete_get	.\controllers\authorController.js	/^exports.author_delete_get = function(req, res, next) {$/;"	f
+exports.author_delete_post	.\controllers\authorController.js	/^exports.author_delete_post = function(req, res, next) {$/;"	f
+exports.author_detail	.\controllers\authorController.js	/^exports.author_detail = function(req, res, next) {$/;"	f
+exports.author_list	.\controllers\authorController.js	/^exports.author_list = function(req, res, next) {$/;"	f
+exports.author_update_get	.\controllers\authorController.js	/^exports.author_update_get = function(req, res) {$/;"	f
+exports.author_update_post	.\controllers\authorController.js	/^exports.author_update_post = function(req, res) {$/;"	f
+exports.book_create_get	.\controllers\bookController.js	/^exports.book_create_get = function(req, res, next) {$/;"	f
+exports.book_delete_get	.\controllers\bookController.js	/^exports.book_delete_get = function(req, res) {$/;"	f
+exports.book_delete_post	.\controllers\bookController.js	/^exports.book_delete_post = function(req, res) {$/;"	f
+exports.book_detail	.\controllers\bookController.js	/^exports.book_detail = function(req, res, next) {$/;"	f
+exports.book_list	.\controllers\bookController.js	/^exports.book_list = function(req, res) {$/;"	f
+exports.book_update_get	.\controllers\bookController.js	/^exports.book_update_get = function(req, res, next) {$/;"	f
+exports.bookinstance_create_get	.\controllers\bookinstanceController.js	/^exports.bookinstance_create_get = function(req, res, next) {$/;"	f
+exports.bookinstance_delete_get	.\controllers\bookinstanceController.js	/^exports.bookinstance_delete_get = function(req, res) {$/;"	f
+exports.bookinstance_delete_post	.\controllers\bookinstanceController.js	/^exports.bookinstance_delete_post = function(req, res) {$/;"	f
+exports.bookinstance_detail	.\controllers\bookinstanceController.js	/^exports.bookinstance_detail = function(req, res, next) {$/;"	f
+exports.bookinstance_list	.\controllers\bookinstanceController.js	/^exports.bookinstance_list = function(req, res, next) {$/;"	f
+exports.bookinstance_update_get	.\controllers\bookinstanceController.js	/^exports.bookinstance_update_get = function(req, res) {$/;"	f
+exports.bookinstance_update_post	.\controllers\bookinstanceController.js	/^exports.bookinstance_update_post = function(req, res) {$/;"	f
+exports.genre_create_get	.\controllers\genreController.js	/^exports.genre_create_get = function(req, res) {$/;"	f
+exports.genre_delete_get	.\controllers\genreController.js	/^exports.genre_delete_get = function(req, res) {$/;"	f
+exports.genre_delete_post	.\controllers\genreController.js	/^exports.genre_delete_post = function(req, res) {$/;"	f
+exports.genre_detail	.\controllers\genreController.js	/^exports.genre_detail = function(req, res, next) {$/;"	f
+exports.genre_list	.\controllers\genreController.js	/^exports.genre_list = function(req, res) {$/;"	f
+exports.genre_update_get	.\controllers\genreController.js	/^exports.genre_update_get = function(req, res) {$/;"	f
+exports.genre_update_post	.\controllers\genreController.js	/^exports.genre_update_post = function(req, res) {$/;"	f
+exports.index	.\controllers\bookController.js	/^exports.index = function(req, res) {$/;"	f
+express	.\app.js	/^var express = require('express');$/;"	v
+express	.\controllers\catalog.js	/^var express = require('express');$/;"	v
+express	.\routes\catalog.js	/^var express = require('express');$/;"	v
+express	.\routes\index.js	/^var express = require('express');$/;"	v
+express	.\routes\users.js	/^var express = require('express');$/;"	v
+genreCreate	.\populatedb.js	/^function genreCreate(name, cb) {$/;"	f
+genre_controller	.\controllers\catalog.js	/^var genre_controller = require('..\/controllers\/genreController');$/;"	v
+genre_controller	.\routes\catalog.js	/^var genre_controller = require('..\/controllers\/genreController');$/;"	v
+indexRouter	.\app.js	/^var indexRouter = require('.\/routes\/index');$/;"	v
+logger	.\app.js	/^var logger = require('morgan');$/;"	v
+mongoDB	.\app.js	/^var mongoDB = process.env.DATABASE || '-'; \/\/ add a or expression to handle potential error$/;"	v
+mongoDB	.\populatedb.js	/^var mongoDB = userArgs[0];$/;"	v
+mongoose	.\app.js	/^var mongoose = require('mongoose');$/;"	v
+mongoose	.\models\author.js	/^var mongoose = require('mongoose');$/;"	v
+mongoose	.\models\book.js	/^var mongoose = require('mongoose');$/;"	v
+mongoose	.\models\bookinstance.js	/^var mongoose = require('mongoose');$/;"	v
+path	.\app.js	/^var path = require('path');$/;"	v
+router	.\controllers\catalog.js	/^var router = express.Router();$/;"	v
+router	.\routes\catalog.js	/^var router = express.Router();$/;"	v
+router	.\routes\index.js	/^var router = express.Router();$/;"	v
+router	.\routes\users.js	/^var router = express.Router();$/;"	v
+userArgs	.\populatedb.js	/^var userArgs = process.argv.slice(2);$/;"	v
+usersRouter	.\app.js	/^var usersRouter = require('.\/routes\/users');$/;"	v

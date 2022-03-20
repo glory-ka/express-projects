@@ -1,0 +1,6 @@
+# ignore the node_modules directory
+node_modules/
+
+# ignore swap files
+*.swap
+
