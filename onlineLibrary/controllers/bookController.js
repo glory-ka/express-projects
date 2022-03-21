@@ -32,8 +32,22 @@ exports.index = function(req, res) {
 };
 
 // Display list of all books.
-exports.book_list = function(req, res) {
-    res.send('NOT IMPLEMENTED: Book list');
+exports.book_list = function(req, res, next) {
+    Book.find({}, 'title author')
+    .populate('author')
+    .sort({title:1})
+    .exec(function (err, book_list){
+        if (err) {return next(err);}
+
+        if (book_list === null)
+        {
+            console.error(book_list);
+            var err = new Error('Book not found');
+            err.status = 404;
+            return next(err);
+        }
+        res.render('book_list', {title:'Book list', book_list: book_list});
+    });
 };
 
 // Display detail page for a specific book.
@@ -59,10 +73,10 @@ exports.book_detail = function(req, res, next) {
             err.status = 404;
             return next(err);
         }
+
         // Successful, so render.
         res.render('book_detail', { title: results.book.title, book: results.book, book_instances: results.book_instance } );
     });
-
 };
 
 // Display book create form on GET.
