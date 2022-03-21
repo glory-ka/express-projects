@@ -4,8 +4,25 @@ var async = require('async');
 const { body,validationResult } = require("express-validator");
 
 // Display list of all Genre.
-exports.genre_list = function(req, res) {
-    res.send('NOT IMPLEMENTED: Genre list');
+exports.genre_list = function(req, res, next) {
+
+    Genre.find()
+        .sort([['name', 'ascending']])
+        .exec(function (err, genre_list) {
+
+            if (err){return next(err);}
+
+            // If result is empty.
+            if (genre_list === null)
+            {
+                var err = new Error('No Genre found');
+                err.status = 404;
+                return next(err);
+            }
+
+            // if Successful, render.
+            res.render('genre_list', {title: 'Genre List', genres: genre_list});
+        });
 };
 
 // Display detail page for a specific Genre.
