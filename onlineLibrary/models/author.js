@@ -33,13 +33,13 @@ AuthorSchema.virtual('lifespan').get(function() {
   var lifetime_string = '';
 
   if (this.date_of_birth) {
-    lifetime_string = this.date_of_birth.getYear().toString();
+    lifetime_string = this.date_of_birth.getFullYear().toString();
   }
 
   lifetime_string += ' - ';
 
   if (this.date_of_death) {
-    lifetime_string += this.date_of_death.getYear()
+    lifetime_string += this.date_of_death.getFullYear()
   }
 
   return lifetime_string;
