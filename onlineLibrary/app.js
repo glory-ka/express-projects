@@ -10,14 +10,14 @@ var catalogRouter = require('./routes/catalog');
 
 var app = express();
 
-/** 
-	view engine setup
-	path.resolve(__dirname, 'views')
-*/
+/**
+ *	view engine setup
+ *	path.resolve(__dirname, 'views')
+ */
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-// Middleware 
+// Middleware chain 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 
-//Set up mongoose connection
+// Set up mongoose connection
 var mongoose = require('mongoose');
 var mongoDB = process.env.DATABASE || '-'; // add a or expression to handle potential error
 
